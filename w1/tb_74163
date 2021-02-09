@@ -1,0 +1,28 @@
+`timescale 1ns/1ns
+module tb_74163();
+reg [7:0] p;
+reg clk, rst, pl;
+wire tc2;
+wire [7:0] o;
+wire [3:0] left_o, right_o;
+
+t74163_extend U4(p,o,left_o,right_o,clk,rst,pl,tc2);
+
+always begin
+	#20 clk = ~clk;
+end
+
+initial begin
+p = 8'b01011110; rst = 1; pl = 1; clk=0; //initial settings
+#10 rst = 1; pl = 0; // first load
+#30 rst = 1; pl = 1;
+#30 rst = 1; pl = 1;
+#30 rst = 1; pl = 1;
+#30 rst = 0; pl = 1; // reset
+#35 rst = 1; pl = 1;
+#30 rst = 1; pl = 0; // second load
+#30 rst = 1; pl = 1;
+#30 $stop;
+end
+
+endmodule 

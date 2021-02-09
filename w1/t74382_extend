@@ -1,0 +1,22 @@
+module t74382_extend(a,b,s,cin,cout,f,f1,f2);
+input [7:0] a, b;
+input [2:0] s;
+input cin;
+wire cin;
+wire cmid;
+output cout;
+output [3:0] f2;
+wire [3:0] f2;
+output [7:4]f1;
+wire [7:4] f1;
+output [7:0] f;
+wire [7:0] f;
+
+wire [3:0] a1,a2,b1,b2;
+assign {a1,a2}=a; // [7:4] a -> a1, [3:0] a -> a2
+assign {b1,b2}=b; // [7:4] b -> b1, [3:0] b -> b2
+assign f={f1,f2}; // [7:4] f -> f1, [3:0] f -> f2 
+t74382 U0(a1,b1,s,cin,cmid,f1);//4-7bit
+t74382 U1(a2,b2,s,cmid,cout,f2);//0-3bit
+
+endmodule 

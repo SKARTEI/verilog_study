@@ -1,0 +1,12 @@
+`timescale 1ns/1ns
+module dividetest();
+reg [7:0] a;
+wire [3:0]a1,a2;
+assign {a1,a2}=a;
+
+initial begin
+a = 8'b11110000;
+#30 $stop;
+end
+
+endmodule 

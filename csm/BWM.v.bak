@@ -1,0 +1,41 @@
+module BWM (x,y,p);
+parameter BW = 8;
+localparam PW = 2 * BW, BW1 = BW-1;
+
+input [BW-1:0]x,y;
+output [PW-2:0] p;
+
+wire [BW1:0] xy[0:BW1]; // and gate 8x8 64
+wire [BW1:0] s[1:BW];
+wire [BW1:0] cl[1:BW];
+
+genvar i;
+generate // keu gi bit
+for (i=0;i<BW1;i=i+1)
+begin:GA1
+assign xy[i][BW1-1:0] = x[BW-1:0] & {BW1{y[i]}};
+end
+endgenerate
+
+generate // x sign y keugi
+for (i=0;i<BW1;i=i+1)
+begin:GA2
+assign xy[i][BW1] = ~(y[i] & x[BW1]); 
+end
+endgenerate
+
+assign xy[BW1][BW1-1:0] = ~( {BW1{y[BW1]} & x[BW1-1:0]; // x keugi y sign 
+assign xy[BW1][BW1] = x[BW1] & y[BW1];
+
+PFA U0 ({1'b0, xy[0][BW1:1]}, xy[1], {BW{1'b0}}, s[1], cl[1]);
+
+generate
+for (i=2;i<BW;i=i+1)
+begin: GA3
+PFA U1 ({1'b0, s[i-1][BW1:1]}, xy[i], cl[i-1], s[i], cl[i]);
+
+RCA
+assign p = ();
+end
+endgenerate 
+endmodule 

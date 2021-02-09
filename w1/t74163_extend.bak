@@ -1,0 +1,20 @@
+module t74163_extend(p,o,left_o,right_o,clk,rst,pl,tc2);
+input [7:0] p;
+input clk, rst, pl, tc1;
+output tc2;
+output [7:0] o;
+wire [7:0] o;
+
+output [3:0] left_o;
+wire [3:0] left_o;
+output [7:4] right_o;
+wire [7:4] right_o;
+
+wire [3:0]right_p, left_p;
+assign {right_p,left_p}=p;
+assign o={right_o,left_o};
+
+t74163 U0(clk,rst,1'b1,1'b1,pl,left_p,left_o,tc1);
+t74163 U1(clk,rst,1'b1,tc1,pl,right_p,right_o,tc2);
+
+endmodule

@@ -1,0 +1,33 @@
+`timescale 1ns/1ns
+module tb1_shifter();
+reg reset, clk, load, sl, sr;
+reg [7:0] d;
+wire [7:0] q;
+shifter U1(reset, clk, load, sl, sr, d, q);
+
+always begin
+#20 clk = ~clk; //clk setting
+end
+initial begin
+reset=1; clk =1'b0; load =1'b0; sl=1'b0; sr=1'b0; d=8'b00001000;//initial settings
+end
+//test start
+initial begin
+	#35 load=1'b1;
+	#35 load=1'b0;
+	#35 sl=1'b1; 
+	#35 // 140ns 20*7 clk
+	#35 sl=1'b1; 
+	#35 sl=1'b0;
+	#35 sr=1'b1;
+	#35 // 280ns 20*14 clk
+	#35 reset = 0; sr=0;
+	#35 reset = 1;
+	#35 load=0;
+	#35 // 420ns 20*21 clk
+	#35 load=1;
+	#35 load=0;
+	//total 490ns
+#20 $stop;
+end
+endmodule 

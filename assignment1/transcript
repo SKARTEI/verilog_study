@@ -1,0 +1,6 @@
+# Reading D:/modelsim/modelsim_ase/tcl/vsim/pref.tcl
+# error: Layout::Clairvoyance can't read "map(Y)": no such element in array
+# can't read "map(Y)": no such element in array
+#     while executing
+# "Layout::Clairvoyance"
+# OpenFile {C:/Users/USER-20200311/Desktop/2Y0 XÌ  ü/À8$Ääµ/ü1/TÜ \…/special last/bcd.v}

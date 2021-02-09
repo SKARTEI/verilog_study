@@ -1,0 +1,85 @@
+{D:/modelsim/assignment/special last/t7447.v} {1 {vlog -work work -stats=none {D:/modelsim/assignment/special last/t7447.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module t7447
+
+Top level modules:
+	t7447
+
+} {} {}} {D:/modelsim/assignment/special last/t74147_1.v} {1 {vlog -work work -stats=none {D:/modelsim/assignment/special last/t74147_1.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module t74147_1
+
+Top level modules:
+	t74147_1
+
+} {} {}} {D:/modelsim/assignment/special last/t7475_1.v} {1 {vlog -work work -stats=none {D:/modelsim/assignment/special last/t7475_1.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module t7475_1
+
+Top level modules:
+	t7475_1
+
+} {} {}} {D:/modelsim/assignment/special last/t7485.v} {1 {vlog -work work -stats=none {D:/modelsim/assignment/special last/t7485.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module t7485
+
+Top level modules:
+	t7485
+
+} {} {}} {D:/modelsim/assignment/special last/TB_top.v} {1 {vlog -work work -stats=none {D:/modelsim/assignment/special last/TB_top.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module TB_top
+
+Top level modules:
+	TB_top
+
+} {} {}} {D:/modelsim/assignment/special last/BCD_100.v} {1 {vlog -work work -stats=none {D:/modelsim/assignment/special last/BCD_100.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module BCD_100
+
+Top level modules:
+	BCD_100
+
+} {} {}} {D:/modelsim/assignment/special last/t7447_1.v} {1 {vlog -work work -stats=none {D:/modelsim/assignment/special last/t7447_1.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module t7447_1
+
+Top level modules:
+	t7447_1
+
+} {} {}} {D:/modelsim/assignment/special last/t7475.v} {1 {vlog -work work -stats=none {D:/modelsim/assignment/special last/t7475.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module t7475
+
+Top level modules:
+	t7475
+
+} {} {}} {D:/modelsim/assignment/special last/t74147.v} {1 {vlog -work work -stats=none {D:/modelsim/assignment/special last/t74147.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module t74147
+
+Top level modules:
+	t74147
+
+} {} {}} {D:/modelsim/assignment/special last/top.v} {1 {vlog -work work -stats=none {D:/modelsim/assignment/special last/top.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module top
+
+Top level modules:
+	top
+
+} {} {}} {D:/modelsim/assignment/special last/t7485_1.v} {1 {vlog -work work -stats=none {D:/modelsim/assignment/special last/t7485_1.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module t7485_1
+
+Top level modules:
+	t7485_1
+
+} {} {}} {D:/modelsim/assignment/special last/bcd.v} {1 {vlog -work work -stats=none {D:/modelsim/assignment/special last/bcd.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module bcd
+
+Top level modules:
+	bcd
+
+} {} {}}

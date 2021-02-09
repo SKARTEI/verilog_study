@@ -1,0 +1,264 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/modelsim/assignment/special1
+vbcd
+Z0 !s110 1602751597
+!i10b 1
+!s100 iO?YRZO4UWGC>NI@^3E[d2
+I4o;N11SH^RNmHIm7ek9Ab2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/modelsim/assignment/special last
+w1602312005
+8D:/modelsim/assignment/special last/bcd.v
+FD:/modelsim/assignment/special last/bcd.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1602751597.000000
+!s107 D:/modelsim/assignment/special last/bcd.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/modelsim/assignment/special last/bcd.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vBCD_100
+R0
+!i10b 1
+!s100 TWoLbPaRJzoSToo:j:_?73
+Im`VzTZ`W]<`UQP4_iTn?W2
+R1
+R2
+w1602312763
+8D:/modelsim/assignment/special last/BCD_100.v
+FD:/modelsim/assignment/special last/BCD_100.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/modelsim/assignment/special last/BCD_100.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/modelsim/assignment/special last/BCD_100.v|
+!i113 1
+R5
+R6
+n@b@c@d_100
+vt74147
+Z7 !s110 1602751598
+!i10b 1
+!s100 c222V2LiM[K6R?XYoReL32
+IUEGD=oAjJ7VQI8HJ6;JK72
+R1
+R2
+w1602395912
+8D:/modelsim/assignment/special last/t74147.v
+FD:/modelsim/assignment/special last/t74147.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z8 !s108 1602751598.000000
+!s107 D:/modelsim/assignment/special last/t74147.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/modelsim/assignment/special last/t74147.v|
+!i113 1
+R5
+R6
+vt74147_1
+R7
+!i10b 1
+!s100 EABRQ9fZbce`SHm:];5f[0
+IZRBz3@G2MS0M_z9?RI?Me0
+R1
+R2
+w1602682338
+8D:/modelsim/assignment/special last/t74147_1.v
+FD:/modelsim/assignment/special last/t74147_1.v
+L0 2
+R3
+r1
+!s85 0
+31
+R8
+!s107 D:/modelsim/assignment/special last/t74147_1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/modelsim/assignment/special last/t74147_1.v|
+!i113 1
+R5
+R6
+vt7447
+R0
+!i10b 1
+!s100 P]YS=e58K6lbQ`8b2M3YZ3
+I@Jg>>;54UBLcildVimO?F3
+R1
+R2
+w1602394656
+8D:/modelsim/assignment/special last/t7447.v
+FD:/modelsim/assignment/special last/t7447.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/modelsim/assignment/special last/t7447.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/modelsim/assignment/special last/t7447.v|
+!i113 1
+R5
+R6
+vt7447_1
+R7
+!i10b 1
+!s100 nbh^3Gzl[2F3gSF1d^B<`2
+I=5>zeTDZ^CIR60PAOjjoE3
+R1
+R2
+w1602748995
+8D:/modelsim/assignment/special last/t7447_1.v
+FD:/modelsim/assignment/special last/t7447_1.v
+L0 2
+R3
+r1
+!s85 0
+31
+R8
+!s107 D:/modelsim/assignment/special last/t7447_1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/modelsim/assignment/special last/t7447_1.v|
+!i113 1
+R5
+R6
+vt7475
+R7
+!i10b 1
+!s100 a[bbzgBzz7kGglE11`nei1
+I3^7FGfYzoGf^ICi08e>cc0
+R1
+R2
+w1602393316
+8D:/modelsim/assignment/special last/t7475.v
+FD:/modelsim/assignment/special last/t7475.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 D:/modelsim/assignment/special last/t7475.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/modelsim/assignment/special last/t7475.v|
+!i113 1
+R5
+R6
+vt7475_1
+R7
+!i10b 1
+!s100 D;WB9I>Rg2<=f3[B5PQ<n0
+I=JV<79PdJ[@GJ^B2cG2]U1
+R1
+R2
+w1602672838
+8D:/modelsim/assignment/special last/t7475_1.v
+FD:/modelsim/assignment/special last/t7475_1.v
+L0 2
+R3
+r1
+!s85 0
+31
+R8
+!s107 D:/modelsim/assignment/special last/t7475_1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/modelsim/assignment/special last/t7475_1.v|
+!i113 1
+R5
+R6
+vt7485
+R7
+!i10b 1
+!s100 H4]c0n]4OjXUH^MM@iC8^1
+I`Wh_dZlUe^ea4kGgKaT0X1
+R1
+R2
+w1602751595
+8D:/modelsim/assignment/special last/t7485.v
+FD:/modelsim/assignment/special last/t7485.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 D:/modelsim/assignment/special last/t7485.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/modelsim/assignment/special last/t7485.v|
+!i113 1
+R5
+R6
+vt7485_1
+R7
+!i10b 1
+!s100 A@d9gXFJdZ?P]^`IXR;eM2
+IYjzA6`g2g2?9OMoLB]`[L0
+R1
+R2
+w1602682084
+8D:/modelsim/assignment/special last/t7485_1.v
+FD:/modelsim/assignment/special last/t7485_1.v
+L0 2
+R3
+r1
+!s85 0
+31
+R8
+!s107 D:/modelsim/assignment/special last/t7485_1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/modelsim/assignment/special last/t7485_1.v|
+!i113 1
+R5
+R6
+vTB_top
+R7
+!i10b 1
+!s100 k^;DA7[Qn3_VE8gVHH;Ne1
+ITo1an1GW6]1?8j0gGk_TB2
+R1
+R2
+w1602748832
+8D:/modelsim/assignment/special last/TB_top.v
+FD:/modelsim/assignment/special last/TB_top.v
+L0 2
+R3
+r1
+!s85 0
+31
+R8
+!s107 D:/modelsim/assignment/special last/TB_top.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/modelsim/assignment/special last/TB_top.v|
+!i113 1
+R5
+R6
+n@t@b_top
+vtop
+R7
+!i10b 1
+!s100 XcoI4F;<<;n<UbXVFFYNe1
+ImBK5nPonkd@8YlmfZ]><Z0
+R1
+R2
+w1602750011
+8D:/modelsim/assignment/special last/top.v
+FD:/modelsim/assignment/special last/top.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 D:/modelsim/assignment/special last/top.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/modelsim/assignment/special last/top.v|
+!i113 1
+R5
+R6

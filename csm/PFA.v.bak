@@ -1,0 +1,17 @@
+module PFA (x,y,ci,s,co);
+parameter BW = 8;
+input [BW-1:0] x,y,ci;
+output wire [BW-1:0] s;
+output wire co;
+
+assign co = ci[BW-1];
+
+genvar i;
+generate
+for (i=0;i<BW;i=i+1) begin: G1
+FA W (x[i],y[i], ci[i], s[i], ci[i+1]);
+end
+endgenerate
+
+
+endmodule 

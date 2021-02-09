@@ -1,0 +1,23 @@
+`timescale 1ns/1ns
+module t7485_1 (e,f,iegf,ielf,ieq,oeq,oegf,oelf);
+input [3:0] e, f;
+input ieq, iegf, ielf;
+output oeq, oegf, oelf;
+
+wire [3:0] e,f;
+wire ieq, iegf, ielf;
+reg oeq, oegf, oelf;
+
+always @ (*)
+if (e>f) #40 begin oegf = 1'b1; oelf = 1'b0; oeq = 1'b0; end
+else if (e<f) #40 begin oegf = 1'b0; oelf = 1'b1; oeq = 1'b0; end
+else #26
+  casex ({iegf, ielf, ieq}) 
+    3'b100 : begin oegf = 1'b1; oelf = 1'b0; oeq = 1'b0; end
+    3'b010 : begin oegf = 1'b0; oelf = 1'b1; oeq = 1'b0; end
+    3'b??1 : begin oegf = 1'b0; oelf = 1'b0; oeq = 1'b1; end
+    3'b110 : begin oegf = 1'b0; oelf = 1'b0; oeq = 1'b0; end
+    default: begin oegf = 1'b1; oelf = 1'b1; oeq = 1'b0; end
+endcase
+endmodule
+

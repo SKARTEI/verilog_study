@@ -1,0 +1,27 @@
+module t74382(a,b,s,cin,cout,f);
+input [3:0] a, b;
+input [2:0] s;
+input cin;
+output cout;
+reg cout;
+output [3:0] f;
+reg [3:0] f;
+
+wire [4:0] sum5;
+assign sum5 = a+b+cin; 
+
+always @ (a,b,s)
+  begin f= 4'b0; cout = 0;
+	if(s == 3'b000) f = 4'b0000;
+	else if(s == 3'b001) f = b-a;
+	else if(s == 3'b010) f = a-b;
+	else if(s == 3'b011)
+		if (sum5 >=5'b10000) begin f = a+b+cin; cout =1; end
+			else  begin f = a+b+cin; cout =0; end
+
+	else if(s == 3'b100) f = a^b;
+	else if(s == 3'b101) f = a|b;
+	else if(s == 3'b110) f = a&b;
+	else f = 4'b1111;
+end
+endmodule 

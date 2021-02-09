@@ -1,0 +1,21 @@
+module t74163(clk,mr,cep,cet,pe,p,o,tc);
+input clk, mr, pe, cep, cet;
+input [3:0] p;
+wire [3:0] p;
+output [3:0] o;
+reg [3:0] o;
+output tc;
+reg tc;
+
+
+always @ (posedge clk)
+	if(~mr) o <= {4{1'b0}};  //reset
+	else if (~pe) o <= p; //load
+	else if (~cep) o <= o; //hold
+	else if (~cet) o <= o; //hold
+	else    //count
+		if (o == 4'd8) begin o <= o+1'b1; tc <= 1'b0; end
+		else if (o == 4'd9) begin o <= 4'b0000; tc <= 1'b1; end
+		else begin o <= o+1'b1; tc <= 1'b1; end
+
+endmodule 

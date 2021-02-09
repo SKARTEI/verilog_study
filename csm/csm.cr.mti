@@ -1,0 +1,113 @@
+D:/modelsim/termproject/5NEW/calc.v {1 {vlog -work work -stats=none D:/modelsim/termproject/5NEW/calc.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module calc
+
+Top level modules:
+	calc
+
+} {} {}} D:/modelsim/termproject/5NEW/cwrom_bb.v {1 {vlog -work work -stats=none D:/modelsim/termproject/5NEW/cwrom_bb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module cwrom
+
+Top level modules:
+	cwrom
+
+} {} {}} D:/modelsim/termproject/5NEW/div.v {1 {vlog -work work -stats=none D:/modelsim/termproject/5NEW/div.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module div
+
+Top level modules:
+	div
+
+} {} {}} D:/modelsim/termproject/5NEW/mmem.v {1 {vlog -work work -stats=none D:/modelsim/termproject/5NEW/mmem.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module mmem
+
+Top level modules:
+	mmem
+
+} {} {}} D:/modelsim/termproject/5NEW/conword1.v {1 {vlog -work work -stats=none D:/modelsim/termproject/5NEW/conword1.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module conword1
+
+Top level modules:
+	conword1
+
+} {} {}} D:/modelsim/termproject/5NEW/mmem_bb.v {1 {vlog -work work -stats=none D:/modelsim/termproject/5NEW/mmem_bb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module mmem
+
+Top level modules:
+	mmem
+
+} {} {}} D:/modelsim/termproject/5NEW/rfile.v {1 {vlog -work work -stats=none D:/modelsim/termproject/5NEW/rfile.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module rfile
+
+Top level modules:
+	rfile
+
+} {} {}} D:/modelsim/termproject/5NEW/Xsel.v {1 {vlog -work work -stats=none D:/modelsim/termproject/5NEW/Xsel.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Xsel
+
+Top level modules:
+	Xsel
+
+} {} {}} D:/modelsim/termproject/5NEW/tb_cpu.v {1 {vlog -work work -stats=none D:/modelsim/termproject/5NEW/tb_cpu.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_cpu
+
+Top level modules:
+	tb_cpu
+
+} {} {}} D:/modelsim/termproject/5NEW/BDec.v {1 {vlog -work work -stats=none D:/modelsim/termproject/5NEW/BDec.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module BDec
+
+Top level modules:
+	BDec
+
+} {} {}} D:/modelsim/termproject/5NEW/mul.v {1 {vlog -work work -stats=none D:/modelsim/termproject/5NEW/mul.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module mul
+
+Top level modules:
+	mul
+
+} {} {}} D:/modelsim/termproject/5NEW/FA.v {1 {vlog -work work -stats=none D:/modelsim/termproject/5NEW/FA.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module FA
+
+Top level modules:
+	FA
+
+} {} {}} D:/modelsim/termproject/5NEW/PFA.v {1 {vlog -work work -stats=none D:/modelsim/termproject/5NEW/PFA.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module PFA
+
+Top level modules:
+	PFA
+
+} {} {}} D:/modelsim/termproject/5NEW/cwrom.v {1 {vlog -work work -stats=none D:/modelsim/termproject/5NEW/cwrom.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module cwrom
+
+Top level modules:
+	cwrom
+
+} {} {}} D:/modelsim/termproject/5NEW/conword1_bb.v {1 {vlog -work work -stats=none D:/modelsim/termproject/5NEW/conword1_bb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module conword1
+
+Top level modules:
+	conword1
+
+} {} {}} D:/modelsim/termproject/5NEW/arith.v {1 {vlog -work work -stats=none D:/modelsim/termproject/5NEW/arith.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module arith
+
+Top level modules:
+	arith
+
+} {} {}}

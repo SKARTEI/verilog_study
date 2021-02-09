@@ -1,0 +1,25 @@
+module t74138_extend(a,D0,D1,D2,D3);
+input [4:0] a;
+wire [4:0] a;
+wire [2:0] ain;
+wire e0,e1,e2,e3;
+
+output [7:0] D0,D1,D2,D3;
+wire [7:0] D0,D1,D2,D3;
+wire w3;
+	not (w3,a[3]);
+
+and (e0,1'b1,(a[4] == 0),(a[3] == 0));
+and (e1,(a[3] == 1),(a[4] == 0),1'b1);
+and (e2,(a[4] == 1),(a[3] == 0),1'b1);
+and (e3,(a[4] == 1),1'b1,(w3 ==0));
+
+assign ain = {a[2:0]};
+
+
+t74138 Z0(ain,e0,D0);
+t74138 Z1(ain,e1,D1);
+t74138 Z2(ain,e2,D2);
+t74138 Z3(ain,e3,D3);
+
+endmodule 

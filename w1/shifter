@@ -1,0 +1,13 @@
+module shifter(reset, clk, load, sl, sr, d, q);
+input reset, clk, load, sl, sr;
+input [7:0] d;
+output [7:0] q;
+reg [7:0] q;
+always @(negedge reset or posedge clk )
+if (!reset) q <= 0; 
+else if (load) q <= d; 
+else if (sl) q <= q << 1; 
+else if (sr) q <= q >> 1; 
+endmodule
+
+// for the test bench simulation okay?

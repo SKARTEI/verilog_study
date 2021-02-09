@@ -1,0 +1,36 @@
+module SEG_CC (input [3:0] bcd, output reg [7:1] seg );
+input LT;
+always @*
+if(LT == 1'b0)//low active
+	 seg = 7'b1111111; //ALL LAMP IS high
+else
+	seg = seg;
+
+/*if(LT == 1'b0)
+	 bcd = 4'b1000; */
+
+case(bcd)
+// LED           gfedcba CC?
+4'b0000: seg = 7'b0111111 ; // 0
+4'b0001: seg = 7'b0000110 ; // 1
+4'b0010: seg = 7'b1011011 ; // 2
+4'b0011: seg = 7'b1001111 ; // 3
+4'b0100: seg = 7'b1100110 ; // 4
+4'b0101: seg = 7'b1101101 ; // 5
+4'b0110: seg = 7'b1111101 ; // 6
+4'b0111: seg = 7'b0000111 ; // 7
+4'b1000: seg = 7'b1111111 ; // 8
+4'b1001: seg = 7'b1101111 ; // 9
+4'b1001: seg = 7'b1110111 ; // A
+4'b1001: seg = 7'b1111100 ; // B
+4'b1001: seg = 7'b1011000 ; // C
+4'b1001: seg = 7'b1011110 ; // D
+4'b1001: seg = 7'b1111001 ; // E
+4'b1001: seg = 7'b1110001 ; // F
+default: seg = 7'b1000000 ; // "-" default
+endcase
+
+endmodule
+
+
+

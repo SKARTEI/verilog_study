@@ -1,0 +1,45 @@
+module csam(x,y,z);
+
+input [7:0] x,y;
+output [14:0] z;
+		
+wire [6:0] sum1,sum2,sum3,sum4,sum5,sum6,sum7,mul1;
+wire [6:0] co1,co2,co3,co4,co5,co6,co7,co8;
+wire [7:0] in0,in1,in2,in3,in4,in5,in6,in7;
+	
+	
+assign in0 = {8{y[0]}} & x;
+assign in1 = {8{y[1]}} & x;
+assign in2 = {8{y[2]}} & x;
+assign in3 = {8{y[3]}} & x;
+assign in4 = {8{y[4]}} & x;
+assign in5 = {8{y[5]}} & x;
+assign in6 = {8{y[6]}} & x;
+assign in7 = {8{y[7]}} & x;
+
+RCA8 a1(in0[7:1],in1[6:0],7'b0,sum1,co1);
+RCA8 a2({in1[7],sum1[6:1]},in2[6:0],co1,sum2,co2);
+RCA8 a3({in2[7],sum2[6:1]},in3[6:0],co2,sum3,co3);
+RCA8 a4({in3[7],sum3[6:1]},in4[6:0],co3,sum4,co4);
+RCA8 a5({in4[7],sum4[6:1]},in5[6:0],co4,sum5,co5);
+RCA8 a6({in5[7],sum5[6:1]},in6[6:0],co5,sum6,co6);
+RCA8 a7({in6[7],sum6[6:1]},in7[6:0],co6,sum7,co7);
+
+	
+fa b1(co7[0],sum7[1],1'b0,mul1[0],co8[0]);
+
+genvar i;
+generate 
+for(i=0;i<5;i=i+1)
+begin: GA
+fa b (co7[i+1],sum7[i+2],co8[i],mul1[i+1],co8[i+1]);
+end
+endgenerate
+
+
+
+fa b7(in7[7],co7[6],co8[5],mul1[6],co8[6]);
+		
+assign mul = {mul1[6:0],sum7[0],sum6[0],sum5[0],sum4[0],sum3[0],sum2[0],sum1[0],in0[0]};	
+	
+endmodule 

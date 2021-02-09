@@ -1,0 +1,52 @@
+module program_count(clk,rst, psw, IR, pi, pl, PC_EXTEND);
+input clk, rst, pi, pl;
+input [3:0] psw;
+input [15:0] IR;
+
+output [8:0] PC_EXTEND;
+reg [8:0] PC_EXTEND;
+
+reg [4:0] FS; // FS = [13:9] IR
+
+wire [8:0] addr; // da aa ba
+/*
+z = psw[3];
+n = psw[2];
+c = psw[1];
+v = psw[0]; 
+*/
+
+always @ *
+if (IR[13] = 1'b1) 
+	addr = {1'b0, IR[7:0]};
+else
+	addr = {IR[7], IR[7:0]};
+
+
+always @ (posedge clk, posedge rst)	begin
+if(!rst)
+	pc <= 9'b0;
+else
+	if(pi)
+	PC_EXTEND <= PC_EXTEND + 9'b1;
+	else if (pl)
+	case(FS)
+	5'b00000 :
+	5'b00001 :
+	5'b00010 :
+	5'b00011 :
+	5'b00100 :
+	5'b00101 :
+
+
+
+
+	endcase
+
+
+end
+
+
+
+
+endmodule 
